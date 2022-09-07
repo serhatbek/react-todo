@@ -16,6 +16,16 @@ function App() {
     setTodo('');
   };
 
+  const deleteTodo = (id) => {
+    const newList = list.filter((item) => item.id !== id);
+    setList(newList);
+    console.log('delete');
+  };
+
+  const editTodo = (id) => {
+    console.log('edit');
+  };
+
   useEffect(() => {
     localStorage.setItem('list', JSON.stringify(list));
   }, [list]);
@@ -37,10 +47,7 @@ function App() {
           </button>
         </form>
         <div className='list'>
-          {list.map((item) => {
-            const { id, title } = item;
-            return <List item={item} key={id} title={title} />;
-          })}
+          <List items={list} editTodo={editTodo} deleteTodo={deleteTodo} />
         </div>
       </section>
     </main>
