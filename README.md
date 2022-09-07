@@ -1,5 +1,5 @@
 # React Todo App
 
-Practicing pros & states in react.
+Practicing props & states in react.
 
 [Check Live Here!](https://serhatbek.github.io/react-todo/)
