@@ -11,11 +11,45 @@ body {
   Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   line-height: 1.5;
   font-size: 0.875rem;
+  background: linear-gradient(283deg, rgba(167,195,215,1) -40%, rgba(111,77,204,1) 100%);
 }
+
+main {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 
 ul {
   list-style-type: none;
 }
 a {
   text-decoration: none;
+}
+
+h1 {
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.todo-container {
+  max-width: 600px;
+  width: 100%;
+  background-color: antiquewhite;
+  padding: 32px;
+  border-radius: 4px;
+}
+
+.todo-input {
+  height: 34px;
+  padding-left: 10px;
+  width: 80%;
+}
+
+.todo-add {
+  width: 20%;
+  height: 34px;
 }
